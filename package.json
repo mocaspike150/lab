@@ -1,0 +1,20 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "A laboratory for new technology ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello World!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mocaspike150/lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mocaspike150/lab/issues"
+  },
+  "homepage": "https://github.com/mocaspike150/lab#readme"
+}
