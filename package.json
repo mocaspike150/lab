@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mocaspike150/lab/issues"
   },
-  "homepage": "https://github.com/mocaspike150/lab#readme"
+  "homepage": "https://github.com/mocaspike150/lab#readme",
+  "dependencies": {
+    "puppeteer": "^1.20.0"
+  }
 }
