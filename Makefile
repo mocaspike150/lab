@@ -1,5 +1,4 @@
-all:
-	git_config
+all: git_config
 	git remote -v
 	git checkout master
 	node bin/collect.js 327007 > 327007.html
