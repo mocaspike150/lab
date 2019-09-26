@@ -4,7 +4,7 @@
   "description": "A laboratory for new technology ideas",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Hello World!"
+    "test": "echo \"Hello World!\""
   },
   "repository": {
     "type": "git",
