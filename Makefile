@@ -4,7 +4,7 @@ all: git_config
 	node bin/collect.js 327007 > 327007.html
 	git add .
 	git commit -m 'update'
-	git push -u https://ontouchstart:${GITHUB_TOKEN}@github.com/ontouchstart/action-cron master
+	git push -u https://ontouchstart:${GITHUB_TOKEN}@github.com/mocaspike150/lab master
 
 git_config:
 	git config --global user.email "ontouchstart@gmail.com"
