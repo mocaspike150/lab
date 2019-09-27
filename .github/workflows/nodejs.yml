@@ -15,11 +15,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: npm install, build, and test
+    - name: make
       run: |
+        node -v
+        npm -v
         npm install
-        npm run build --if-present
-        npm test
+        npm list
         make
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
