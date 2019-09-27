@@ -1,5 +1,11 @@
 [
   {
+    "club_id": "439808",
+    "name": "Tony C.",
+    "mile": 75.5587136,
+    "count": "6"
+  },
+  {
     "club_id": "72363",
     "name": "Guodong P.",
     "mile": 66.1760115,
@@ -10,12 +16,6 @@
     "name": "Jesse L.",
     "mile": 61.453591900000006,
     "count": "4"
-  },
-  {
-    "club_id": "439808",
-    "name": "Tony C.",
-    "mile": 60.272987,
-    "count": "5"
   },
   {
     "club_id": "72363",
