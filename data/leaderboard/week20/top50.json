@@ -1,6 +1,12 @@
 [
   {
     "club_id": "439808",
+    "name": "Jesse L.",
+    "mile": 76.9878669,
+    "count": "5"
+  },
+  {
+    "club_id": "439808",
     "name": "Tony C.",
     "mile": 75.5587136,
     "count": "6"
@@ -10,12 +16,6 @@
     "name": "Guodong P.",
     "mile": 66.1760115,
     "count": "5"
-  },
-  {
-    "club_id": "439808",
-    "name": "Jesse L.",
-    "mile": 61.453591900000006,
-    "count": "4"
   },
   {
     "club_id": "72363",
@@ -120,6 +120,12 @@
     "count": "4"
   },
   {
+    "club_id": "439808",
+    "name": "John W.",
+    "mile": 36.9715745,
+    "count": "5"
+  },
+  {
     "club_id": "72363",
     "name": "Ivy Z.",
     "mile": 36.9094374,
@@ -144,6 +150,12 @@
     "count": "6"
   },
   {
+    "club_id": "439808",
+    "name": "David W.",
+    "mile": 34.7346389,
+    "count": "4"
+  },
+  {
     "club_id": "72363",
     "name": "Hanju W.",
     "mile": 34.610364700000005,
@@ -156,10 +168,22 @@
     "count": "5"
   },
   {
+    "club_id": "301632",
+    "name": "Sherry X.",
+    "mile": 34.4239534,
+    "count": "6"
+  },
+  {
     "club_id": "439808",
     "name": "Qingmei B.",
     "mile": 34.2375421,
     "count": "5"
+  },
+  {
+    "club_id": "439808",
+    "name": "Lieting Y.",
+    "mile": 33.4918969,
+    "count": "4"
   },
   {
     "club_id": "523602",
@@ -195,12 +219,6 @@
     "club_id": "523602",
     "name": "ningde x.",
     "mile": 32.8705259,
-    "count": "5"
-  },
-  {
-    "club_id": "523602",
-    "name": "Weiyong H.",
-    "mile": 32.808388799999996,
     "count": "5"
   },
   {
@@ -271,12 +289,6 @@
   },
   {
     "club_id": "301632",
-    "name": "Sherry X.",
-    "mile": 28.6452031,
-    "count": "4"
-  },
-  {
-    "club_id": "301632",
     "name": "大雁 Z.",
     "mile": 28.4587918,
     "count": "4"
@@ -286,17 +298,5 @@
     "name": "Yale Y.",
     "mile": 28.396654700000003,
     "count": "3"
-  },
-  {
-    "club_id": "439808",
-    "name": "David W.",
-    "mile": 28.2723805,
-    "count": "3"
-  },
-  {
-    "club_id": "301632",
-    "name": "Shen X.",
-    "mile": 28.2102434,
-    "count": "4"
   }
 ]
