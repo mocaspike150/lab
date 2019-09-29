@@ -48,6 +48,12 @@
     "count": "14"
   },
   {
+    "club_id": "301632",
+    "name": "Meng S.",
+    "mile": 54.183551200000004,
+    "count": "6"
+  },
+  {
     "club_id": "439808",
     "name": "Richard Y.",
     "mile": 53.5000431,
@@ -58,12 +64,6 @@
     "name": "Min C.",
     "mile": 51.573793,
     "count": "8"
-  },
-  {
-    "club_id": "301632",
-    "name": "Meng S.",
-    "mile": 50.1446397,
-    "count": "5"
   },
   {
     "club_id": "523602",
