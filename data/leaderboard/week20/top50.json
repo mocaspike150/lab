@@ -120,6 +120,12 @@
     "count": "5"
   },
   {
+    "club_id": "439808",
+    "name": "david w.",
+    "mile": 45.484357200000005,
+    "count": "7"
+  },
+  {
     "club_id": "301632",
     "name": "Jessie Y.",
     "mile": 45.4222201,
@@ -225,12 +231,6 @@
     "club_id": "439808",
     "name": "Samantha W.",
     "mile": 40.2648408,
-    "count": "6"
-  },
-  {
-    "club_id": "439808",
-    "name": "david w.",
-    "mile": 39.4570585,
     "count": "6"
   },
   {
