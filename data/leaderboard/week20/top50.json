@@ -96,6 +96,12 @@
     "count": "9"
   },
   {
+    "club_id": "301632",
+    "name": "Sherry X.",
+    "mile": 46.6649621,
+    "count": "8"
+  },
+  {
     "club_id": "439808",
     "name": "Wayne H.",
     "mile": 46.6649621,
@@ -220,12 +226,6 @@
     "name": "Samantha W.",
     "mile": 40.2648408,
     "count": "6"
-  },
-  {
-    "club_id": "301632",
-    "name": "Sherry X.",
-    "mile": 40.016292400000005,
-    "count": "7"
   },
   {
     "club_id": "439808",
