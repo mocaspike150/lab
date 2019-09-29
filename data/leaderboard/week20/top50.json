@@ -96,6 +96,12 @@
     "count": "5"
   },
   {
+    "club_id": "439808",
+    "name": "Tony J.",
+    "mile": 56.358349700000005,
+    "count": "9"
+  },
+  {
     "club_id": "301632",
     "name": "Lifeng P.",
     "mile": 55.6748416,
@@ -106,6 +112,12 @@
     "name": "Sunny Y.",
     "mile": 55.1777448,
     "count": "6"
+  },
+  {
+    "club_id": "439808",
+    "name": "Yale Y.",
+    "mile": 54.8670593,
+    "count": "7"
   },
   {
     "club_id": "439808",
@@ -142,12 +154,6 @@
     "name": "Shen X.",
     "mile": 52.7543979,
     "count": "6"
-  },
-  {
-    "club_id": "439808",
-    "name": "Tony J.",
-    "mile": 52.6922608,
-    "count": "8"
   },
   {
     "club_id": "301632",
@@ -202,12 +208,6 @@
     "name": "Samantha W.",
     "mile": 50.579599400000006,
     "count": "8"
-  },
-  {
-    "club_id": "439808",
-    "name": "Yale Y.",
-    "mile": 49.7718171,
-    "count": "6"
   },
   {
     "club_id": "523602",
