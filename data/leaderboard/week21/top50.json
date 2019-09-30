@@ -252,6 +252,12 @@
     "count": "3"
   },
   {
+    "club_id": "175314",
+    "name": "Jianmin Z.",
+    "mile": 28.2102434,
+    "count": "2"
+  },
+  {
     "club_id": "204946",
     "name": "Day D.",
     "mile": 28.1481063,
@@ -292,11 +298,5 @@
     "name": "Weikun H.",
     "mile": 26.718953,
     "count": "5"
-  },
-  {
-    "club_id": "204946",
-    "name": "Karen X.",
-    "mile": 26.532541700000003,
-    "count": "4"
   }
 ]
