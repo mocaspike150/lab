@@ -9,6 +9,10 @@ const convert = (id) => {
   
   const dom = new JSDOM(fs.readFileSync(input, 'utf8'))
   const table = dom.window.document.querySelector('table');
+  if(!table) {
+     console.log(`No table in data file ${input}`);
+     return;
+  }
   const html =  table.innerHTML;
   const text =  table.textContent;
   const lines = text.split('\n').filter((d) => (d.length > 0));
