@@ -11,7 +11,7 @@ if (!fs.existsSync(dir)){
 
 axios.get(data)
   .then( (res) => {
-    res.data.forEach((d) => {
+    for(const d of res.data) {
       const image = d['post-image'] ? d['post-image'] : placeholder
       const subdir = `${dir}/${d.id}`
       if (!fs.existsSync(subdir)) { fs.mkdirSync(subdir, { recursive: true }) }
@@ -38,8 +38,7 @@ axios.get(data)
        .catch((error) => {
          console.log(error.response.data)
        })
-//      qr(id)
-    })
+    }
   })
   .catch((error) => {
     console.log(error.res.data)

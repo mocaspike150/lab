@@ -25,14 +25,14 @@ const qr = (user, team, fn) => {
 }
 axios.get(data)
   .then( (response) => {
-    response.data.forEach((d) => {
+    for(const d of response.data) {
       const user = d.crowdrise_page
       const team= d.team
       const subdir = `${dir}/${d.id}`
       if (!fs.existsSync(subdir)) { fs.mkdirSync(subdir, { recursive: true }) }
       const fn = `${subdir}/qr.html`
       qr(user, team, fn)
-    })
+    }
   })
   .catch((error) => {
     console.log(error.response.data)
