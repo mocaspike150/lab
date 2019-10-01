@@ -15,4 +15,4 @@ pull:
 
 build:
 	node bin/qr.js
-	node bin/profile.js
+	node bin/profile_img.js

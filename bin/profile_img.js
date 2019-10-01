@@ -15,7 +15,7 @@ axios.get(data)
       const image = d['post-image'] ? d['post-image'] : placeholder
       const subdir = `${dir}/${d.id}`
       if (!fs.existsSync(subdir)) { fs.mkdirSync(subdir, { recursive: true }) }
-      const fn = `${subdir}/profile.html`
+      const fn = `${subdir}/img.html`
       const w = 1920
       const h = 1080
       axios.get(image, { responseType: 'arraybuffer' })
