@@ -4,7 +4,7 @@ const sharp = require('sharp')
 const data = 'https://www.mocaspike150.org/data/ambassadors.json'
 const placeholder = 'https://user-images.githubusercontent.com/46349226/56007582-392c2900-5ca7-11e9-9113-6391bf266f0d.jpg'
 
-const dir = 'docs/ambassadors-slideshow/profile'
+const dir = 'docs/ambassadors-slideshow'
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir, { recursive: true });
 }
@@ -13,7 +13,9 @@ axios.get(data)
   .then( (res) => {
     res.data.forEach((d) => {
       const image = d['post-image'] ? d['post-image'] : placeholder
-      const fn = `${dir}/${d.slug}.html`
+      const subdir = `${dir}/${d.id}`
+      if (!fs.existsSync(subdir)) { fs.mkdirSync(subdir, { recursive: true }) }
+      const fn = `${subdir}/profile.html`
       const w = 1920
       const h = 1080
       axios.get(image, { responseType: 'arraybuffer' })
