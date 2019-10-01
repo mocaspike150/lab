@@ -1,4 +1,4 @@
-all: git_config pull
+all: git_config pull build
 	date > docs/date.txt
 	git add .
 	git commit -m "`date`"
@@ -12,3 +12,7 @@ git_config:
 pull:
 	git checkout master
 	git pull
+
+build:
+	node bin/qr.js
+	node bin/profile.js
