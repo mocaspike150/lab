@@ -90,7 +90,7 @@ axios.get(data)
        i++;
      }
      show();
-     setInterval(show, 2000);
+     setInterval(show, 5000);
    } 
 
    window.onresize = () => {
