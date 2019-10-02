@@ -20,7 +20,6 @@ ${img}
 ${qr}
 </div>
 <h1 class="name">${d.firstname} ${d.lastname}</h1>
-<h1 class="title">MOCA Spike 150 Ambassador</h1>
 </div>
 `
      const fn = `${subdir}/profile.html`
