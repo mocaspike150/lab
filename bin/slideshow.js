@@ -26,19 +26,23 @@ let html = `
 
 .slide {
   width: 100%;
-  transition-duration: 0s;
+  transition-duration: 1000ms;
   opacity: 0;
 }
 
 .slide .qr {
-  top: 108px;
+  top: 0;
+  left: 0;
   width: 128px;
   height: 128px;
 }
 
 .slide h1.name {
-  padding: 17px;
-  font-size: 64px;
+  left: 128px;
+  width: 100%;
+  padding: 14px;
+  height: 100px;
+  font-size: 72px;
   font-family: Arial, Helvetica, sans-serif;
   color: #FFFFFF;
   background: rgba(255, 161, 10, 0.5);
