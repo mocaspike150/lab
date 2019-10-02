@@ -1,13 +1,18 @@
 const fs = require('fs')
 const axios = require('axios')
-const data = 'https://www.mocaspike150.org/data/ambassadors.json'
-
 const dir = 'docs/ambassadors-slideshow'
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir, { recursive: true });
 }
 
-let html = `
+const slideshow = (list) => {
+  const fn = list ? `${dir}/${list}.html` : `${dir}/slideshow.html`
+  const input = fs.existsSync(`slideshow_list/${list}`) ? `slideshow_list/${list}` : `slideshow_list/slideshow`
+  console.log(input)
+  const ambassadors = fs.readFileSync(input, 'utf-8').split('\n').filter((d) => (d.length > 0))
+  console.log(ambassadors)
+
+  let html = `
 <html>
 <head>
 <style>
@@ -64,11 +69,8 @@ let html = `
 <h1>Please wait</h1>
 <div id="container">
 `
-
-axios.get(data)
-  .then( (res) => {
-    for(const d of res.data) {
-      const subdir = `${dir}/${d.id}`
+    for(const d of ambassadors) {
+      const subdir = `${dir}/ambassadors/${d}`
       const profile = fs.readFileSync(`${subdir}/profile.html`, 'utf-8')
       html += profile
     }
@@ -106,8 +108,6 @@ axios.get(data)
 </body>
 </html>
 `
-
-    const fn = `${dir}/slideshow.html`
      fs.writeFile(fn, html, (err) => {
       if(err) {
         console.log(err)
@@ -116,7 +116,12 @@ axios.get(data)
         console.log(fn)
       }
     })
-  })
-  .catch((error) => {
-    console.log(error.res.data)
-  });
+}
+
+
+fs.readdir('slideshow_list', (err, files) => {
+  console.log(files);
+  for(const list of files) {
+     slideshow(list)
+  }
+})
