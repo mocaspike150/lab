@@ -19,7 +19,7 @@ ${img}
 <div class="qr">
 ${qr}
 </div>
-<h1 class="name">${d.firstname} ${d.lastname}</h1>
+<h1 class="name">${d.firstname ? d.firstname : ''} ${d.lastname ? d.lastname : ''}</h1>
 </div>
 `
      const fn = `${subdir}/profile.html`
