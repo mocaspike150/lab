@@ -1,4 +1,5 @@
 # Change log
+- add slideshow_list/clubs 
 - use slideshow_list/* files to select slides
 - move QR to the top to avoid blocking people
 - set slideshow delay to 5 seconds to allow time to scan QR

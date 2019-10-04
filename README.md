@@ -28,4 +28,5 @@ A laboratory for new technology ideas
    - [x](https://www.mocaspike150.org/lab/ambassadors-slideshow/x.html) 
    - [y](https://www.mocaspike150.org/lab/ambassadors-slideshow/y.html) 
    - [z](https://www.mocaspike150.org/lab/ambassadors-slideshow/z.html) 
+- [clubs](https://www.mocaspike150.org/lab/ambassadors-slideshow/clubs.html) 
 - [changelog](changelog.md)
