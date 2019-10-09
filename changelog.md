@@ -1,4 +1,5 @@
 # Change log
+- add kang_yibin
 - add slideshow_list/all remove others
 - add slideshow_list/clubs 
 - use slideshow_list/* files to select slides
