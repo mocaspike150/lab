@@ -17,5 +17,6 @@ build:
 	node bin/qr.js
 	node bin/profile_img.js
 	node bin/profile.js
-#	ls docs/ambassadors-slideshow/ambassadors/ > slideshow_list/all
+	node bin/qr.js
+	node image_to_slide.js
 	node bin/slideshow.js
