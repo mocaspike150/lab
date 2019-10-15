@@ -1,18 +1,4 @@
-const fs = require('fs')
-const axios = require('axios')
-const dir = 'docs/ambassadors-slideshow'
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir, { recursive: true });
-}
 
-const slideshow = (list) => {
-  const fn = list ? `${dir}/${list}.html` : `${dir}/slideshow.html`
-  const input = fs.existsSync(`slideshow_list/${list}`) ? `slideshow_list/${list}` : `slideshow_list/slideshow`
-  console.log(input)
-  const ambassadors = fs.readFileSync(input, 'utf-8').split('\n').filter((d) => (d.length > 0))
-  console.log(ambassadors)
-
-  let html = `
 <html>
 <head>
 <style>
@@ -68,19 +54,7 @@ const slideshow = (list) => {
 <body>
 <h1>Please wait</h1>
 <div id="container">
-`
-    for(const d of ambassadors) {
-      const subdir = `${dir}/ambassadors/${d}`
-      if( fs.existsSync(subdir) ) {
-        const profile = fs.readFileSync(`${subdir}/profile.html`, 'utf-8')
-        html += profile
-      }
-      else {
-        console.log(d)
-      }
-    }
 
-    html += `
 </div>
 <script>
    window.onload = () => {
@@ -105,28 +79,10 @@ const slideshow = (list) => {
    } 
 
    window.onresize = () => {
-     container.style.width = \`\${window.innerWidth}px\`
-     container.style.height = \`\${window.innerHeight}px\`
+     container.style.width = `${window.innerWidth}px`
+     container.style.height = `${window.innerHeight}px`
    }
    window.onresize();
 </script>
 </body>
 </html>
-`
-     fs.writeFile(fn, html, (err) => {
-      if(err) {
-        console.log(err)
-      }
-      else {
-        console.log(fn)
-      }
-    })
-}
-
-
-fs.readdir('slideshow_list', (err, files) => {
-  console.log(files);
-  for(const list of files) {
-     slideshow(list)
-  }
-})
