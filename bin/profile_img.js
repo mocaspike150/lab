@@ -13,6 +13,9 @@ axios.get(data)
   .then( (res) => {
     for(const d of res.data) {
       const image = d['post-image'] ? d['post-image'] : placeholder
+      if(!d['post-image']) {
+         console.log('missing post-image', d.id)
+      }
       const subdir = `${dir}/${d.id}`
       if (!fs.existsSync(subdir)) { fs.mkdirSync(subdir, { recursive: true }) }
       const fn = `${subdir}/img.html`
