@@ -18,5 +18,5 @@ build:
 	node bin/profile_img.js
 	node bin/profile.js
 	node bin/qr.js
-	node image_to_slide.js
+	node bin/image_to_slide.js
 	node bin/slideshow.js
