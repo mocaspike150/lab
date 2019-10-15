@@ -9,8 +9,8 @@ const slideshow = (list) => {
   const fn = list ? `${dir}/${list}.html` : `${dir}/slideshow.html`
   const input = fs.existsSync(`slideshow_list/${list}`) ? `slideshow_list/${list}` : `slideshow_list/slideshow`
   console.log(input)
-  const ambassadors = fs.readFileSync(input, 'utf-8').split('\n').filter((d) => (d.length > 0))
-  console.log(ambassadors)
+  const id = fs.readFileSync(input, 'utf-8').split('\n').filter((d) => (d.length > 0))
+  console.log(id)
 
   let html = `
 <html>
@@ -69,14 +69,18 @@ const slideshow = (list) => {
 <h1>Please wait</h1>
 <div id="container">
 `
-    for(const d of ambassadors) {
+    for(const d of id) {
       const subdir = `${dir}/ambassadors/${d}`
+      console.log('slide', d)
       if( fs.existsSync(subdir) ) {
         const profile = fs.readFileSync(`${subdir}/profile.html`, 'utf-8')
         html += profile
       }
       else {
-        console.log(d)
+        const slide = fs.readFileSync(`docs/slides/${d}.html`, 'utf-8')
+        html += `
+<div class="slide">${slide}</div>
+`
       }
     }
 
