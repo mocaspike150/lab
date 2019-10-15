@@ -15,6 +15,7 @@ const slideshow = (list) => {
   let html = `
 <html>
 <head>
+<meta charset='UTF-8'>
 <style>
 * {
   position: absolute;
@@ -54,11 +55,11 @@ const slideshow = (list) => {
 }
 
 .slide h1.title {
-  top: 702px;
-  padding: 17px;
+  width: 100%;
+  padding: 14px;
+  height: 100px;
+  font-size: 72px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 17px;
-  font-size: 64px;
   color: #FFFFFF;
   background: rgba(255, 161, 10, 0.5);
 }
@@ -78,9 +79,7 @@ const slideshow = (list) => {
       }
       else {
         const slide = fs.readFileSync(`docs/slides/${d}.html`, 'utf-8')
-        html += `
-<div class="slide">${slide}</div>
-`
+        html += slide
       }
     }
 
