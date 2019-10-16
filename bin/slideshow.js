@@ -23,6 +23,7 @@ const slideshow = (list) => {
   margin: 0;
   color: #FFFFFF;
   background: #000000;
+  overflow:hidden;
 }
 
 #container {
