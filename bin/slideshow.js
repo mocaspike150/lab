@@ -104,7 +104,7 @@ const slideshow = (list) => {
        i++;
      }
      show();
-     setInterval(show, 10000);
+     setInterval(show, 5000);
    } 
 
    window.onresize = () => {
