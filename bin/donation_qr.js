@@ -24,4 +24,4 @@ const qr = (path, fn) => {
 }
 
 const url = 'https://www.crowdrise.com/o/en/campaign/moca-spike-150'
-qr(url, 'docs/mocak-spike-150.html')
+qr(url, 'docs/moca-spike-150.html')
