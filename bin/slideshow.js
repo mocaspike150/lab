@@ -27,7 +27,7 @@ const slideshow = (list) => {
 
 #container {
   opacity: 0;
-  transition-duration: 2s;
+  transition-duration: 4s;
 }
 
 .slide {
@@ -104,7 +104,7 @@ const slideshow = (list) => {
        i++;
      }
      show();
-     setInterval(show, 5000);
+     setInterval(show, 10000);
    } 
 
    window.onresize = () => {
