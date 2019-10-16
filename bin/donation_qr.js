@@ -1,11 +1,5 @@
 const fs = require('fs')
 const QRCode = require('qrcode')
-const axios = require('axios')
-const data = 'https://www.mocaspike150.org/data/ambassadors.json'
-const dir = 'docs/ambassadors-slideshow'
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir, { recursive: true });
-}
 
 const qr = (path, fn) => {
   QRCode.toDataURL(path, function (err, url) {
