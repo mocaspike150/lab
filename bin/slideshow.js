@@ -120,6 +120,7 @@ const slideshow = (list) => {
       if (w0 * h < w * h0) {
         image.width = w0 * h / h0
         image.height =  h 
+        image.style.left = (w * h0 - w0 * h)/(2 * h0) + 'px';
       }
       else {
         image.width = w
