@@ -24,7 +24,7 @@ axios.get(data)
       axios.get(image, { responseType: 'arraybuffer' })
        .then( (response) => {
          buffer = Buffer.from(response.data, 'binary')
-         sharp(buffer).resize({ width: w, height: null })
+         sharp(buffer).resize({ width: null, height: 1080 })
            .toBuffer()
            .then( (data) => { 
              const html = `<img width="100%" src="data:image/png;base64,${data.toString('base64')}"/>`

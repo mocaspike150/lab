@@ -17,6 +17,8 @@ const slideshow = (list) => {
 <head>
 <meta charset='UTF-8'>
 <style>
+html { overflow: hidden; }
+
 * {
   position: absolute;
   padding: 0;
@@ -24,6 +26,7 @@ const slideshow = (list) => {
   color: #FFFFFF;
   background: #000000;
 }
+
 
 #container {
   opacity: 0;
