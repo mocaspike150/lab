@@ -86,32 +86,48 @@ const slideshow = (list) => {
     html += `
 </div>
 <script>
-   window.onload = () => {
-	 const container = document.getElementById('container')
-	 container.style.opacity = 1;
-     let slides = document.querySelectorAll('.slide');
-     let i = 0;
-     const show = () => {
-       console.log(i);
-       if (i == slides.length) { 
-         slides[i-1].style.opacity = 0
-         i = 0;
-       }
-       slides[i].style.opacity = 1
-       if(i > 0) {
-         slides[i-1].style.opacity = 0
-       }
-       i++;
-     }
-     show();
-     setInterval(show, 5000);
-   } 
+  const container = document.getElementById('container')
+  container.style.opacity = 1;
+  let slides = document.querySelectorAll('.slide');
+  let images = document.querySelectorAll('.slide > img');
+  let i = 0;
+  const show = () => {
+    if (i == slides.length) { 
+      slides[i-1].style.opacity = 0
+      i = 0;
+    }
+    slides[i].style.opacity = 1
+    if(i > 0) {
+      slides[i-1].style.opacity = 0
+    }
+    i++;
+  }
+  show();
+  setInterval(show, 10000);
 
-   window.onresize = () => {
-     container.style.width = \`\${window.innerWidth}px\`
-     container.style.height = \`\${window.innerHeight}px\`
-   }
-   window.onresize();
+  window.onresize = () => {
+    let w = window.innerWidth
+    let h = window.innerHeight
+    container.style.width = w
+    container.style.height = h
+    for(const slide of slides) {
+      slide.style.width = w
+      slide.style.height = h
+    }
+    for(const image of images) {
+      const w0 = image.naturalWidth
+      const h0 = image.naturalHeight
+      if (w0 * h < w * h0) {
+        image.width = w0 * h / h0
+        image.height =  h 
+      }
+      else {
+        image.width = w
+        image.height = h0 * w / w0
+      }
+    }
+  }
+  window.onresize();
 </script>
 </body>
 </html>
