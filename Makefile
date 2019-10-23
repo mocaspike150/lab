@@ -24,4 +24,4 @@ slideshow:
 	node bin/slideshow.js
 
 leaderboard:
-	node bin/collect_leaderboard.js 128445
+	node bin/collect_leaderboard.js 128445 |tee 128445.log

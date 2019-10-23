@@ -76,7 +76,7 @@ const collect = (id) => {
         fs.writeFile(output, html, (err) => { if (err) { throw err }; console.log(output); })
       }
       else {
-        console.log(`${new_total} <= ${old_total}`)
+        console.log(`${new_total} <= ${old_total}`, 'data not saved')
       }
       await browser.close()
    })()
