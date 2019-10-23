@@ -60,7 +60,7 @@ const collect = (id) => {
     const url = `https://www.strava.com/clubs/${id}`;
     const output = `${base}/${id}.html`;
     const old_total = total(fs.readFileSync(output, 'utf8'));
-    console.log('old_total', old_total);
+    console.log('old_total', `${old_total} km`, `${(old_total * 0.621371).toFixed(1)} miles`);
 
     (async () => {
       const browser = await puppeteer.launch();
@@ -70,7 +70,7 @@ const collect = (id) => {
       await page.goto(url, {waitUntil: 'networkidle2'});
       const html = await page.evaluate(() => document.body.querySelector('.leaderboard').innerHTML);
       const new_total = total(html)
-      console.log('new_total', new_total);
+      console.log('new_total', `${new_total} km`, `${(new_total * 0.621371).toFixed(1)} miles`);
       if(new_total > old_total) {
         console.log(`${new_total} > ${old_total}`)
         fs.writeFile(output, html, (err) => { if (err) { throw err }; console.log(output); })
