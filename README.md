@@ -2,11 +2,11 @@
 
 A laboratory for new technology ideas
 
-## Single page slideshow
+## Single page slideshows
 
-- [all](https://www.mocaspike150.org/lab/ambassadors-slideshow/all.html) 
-- [clubs](https://www.mocaspike150.org/lab/ambassadors-slideshow/clubs.html) 
-- [runners](https://www.mocaspike150.org/lab/ambassadors-slideshow/runners.html) 
-- [A](https://www.mocaspike150.org/lab/ambassadors-slideshow/A.html) 
-- [B](https://www.mocaspike150.org/lab/ambassadors-slideshow/B.html) 
-- [C](https://www.mocaspike150.org/lab/ambassadors-slideshow/C.html) 
+- [A_clubs](https://www.mocaspike150.org/lab/ambassadors-slideshow/A_clubs.html) 
+- [B_clubs](https://www.mocaspike150.org/lab/ambassadors-slideshow/B_clubs.html) 
+- [C_runners](https://www.mocaspike150.org/lab/ambassadors-slideshow/C_runners.html)
+- [D_runners](https://www.mocaspike150.org/lab/ambassadors-slideshow/D_runners.html)
+- [E_runners](https://www.mocaspike150.org/lab/ambassadors-slideshow/E_runners.html)
+- [F_cover](https://www.mocaspike150.org/lab/ambassadors-slideshow/F_cover.html)
