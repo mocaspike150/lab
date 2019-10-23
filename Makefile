@@ -13,10 +13,15 @@ pull:
 	git checkout master
 	git pull
 
-build:
+build: leaderboard
+	
+slideshow:
 	node bin/qr.js
 	node bin/profile_img.js
 	node bin/profile.js
 	node bin/qr.js
 	node bin/image_to_slide.js
 	node bin/slideshow.js
+
+leaderboard:
+	node bin/collect_leaderboard.js 128445
