@@ -85,3 +85,5 @@ const collect = (id) => {
 
 const id = process.argv[2] || '128445';
 collect(id)
+collect(id)
+collect(id)
