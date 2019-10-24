@@ -13,7 +13,12 @@ pull:
 	git checkout master
 	git pull
 
-build: leaderboard
+build:
+	make leaderboard
+	make leaderboard
+	make leaderboard
+	make leaderboard
+	make leaderboard
 	
 slideshow:
 	node bin/qr.js
