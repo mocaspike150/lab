@@ -1,7 +1,3 @@
 old_total 15 km 9.3 miles
-No table in data file <div class="spinner sm centered" style="">
-      <div class="graphic"></div>
-      <span class="status"></span>
-    </div>
-new_total undefined km NaN miles
-undefined <= 15 data not saved
+new_total 15 km 9.3 miles
+15 <= 15 data not saved
