@@ -32,3 +32,5 @@ leaderboard:
 	node bin/collect_leaderboard.js 128445 |tee 128445.log
 	node bin/collect_leaderboard.js 72363 |tee 72363.log
 	node bin/collect_leaderboard.js 204946 |tee 204946.log
+	node bin/collect_leaderboard.js 241951|tee 241951.log
+
