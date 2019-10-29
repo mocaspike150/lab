@@ -1,4 +1,3 @@
-old_total 337 km 209.4 miles
-new_total 572 km 355.4 miles
-572 > 337
-docs/leaderboard/204946.html
+old_total 572 km 355.4 miles
+new_total 337 km 209.4 miles
+337 <= 572 data not saved
