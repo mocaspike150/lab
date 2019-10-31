@@ -1,3 +1,7 @@
 old_total 1653 km 1027.1 miles
-new_total 946 km 587.8 miles
-946 <= 1653 data not saved
+No table in data file <div class="spinner sm centered" style="">
+      <div class="graphic"></div>
+      <span class="status"></span>
+    </div>
+new_total undefined km NaN miles
+undefined <= 1653 data not saved
