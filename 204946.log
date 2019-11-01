@@ -1,3 +1,7 @@
 old_total 1993 km 1238.4 miles
-new_total 1993 km 1238.4 miles
-1993 <= 1993 data not saved
+No table in data file <div class="spinner sm centered" style="">
+      <div class="graphic"></div>
+      <span class="status"></span>
+    </div>
+new_total undefined km NaN miles
+undefined <= 1993 data not saved
