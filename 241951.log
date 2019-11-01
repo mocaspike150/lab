@@ -1,3 +1,7 @@
 old_total 1978 km 1229.1 miles
-new_total 1184 km 735.7 miles
-1184 <= 1978 data not saved
+No table in data file <div class="spinner sm centered" style="">
+      <div class="graphic"></div>
+      <span class="status"></span>
+    </div>
+new_total undefined km NaN miles
+undefined <= 1978 data not saved
