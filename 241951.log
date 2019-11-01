@@ -1,3 +1,7 @@
 old_total 2178 km 1353.3 miles
-new_total 2009 km 1248.3 miles
-2009 <= 2178 data not saved
+No table in data file <div class="spinner sm centered" style="">
+      <div class="graphic"></div>
+      <span class="status"></span>
+    </div>
+new_total undefined km NaN miles
+undefined <= 2178 data not saved
